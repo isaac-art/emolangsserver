@@ -5,14 +5,14 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="panel">
-              <div class="panel-heading"> 
-              {{ $lang->name }} - {{ $lang->started }} - {{ count($results) }} result
+              <div class="panel-heading">
+              {{ $task->name }} - {{ count($results) }} results
               </div>
             </div>
             <div class="panel" style="overflow: scroll;">
             <table class="table table-striped" >
             <thead>
-                <th>Task ID</th>
+                <th>Language ID</th>
                 <th>word_count</th>
                 <th>openness</th>
                 <th>adventurousness</th>
@@ -70,7 +70,7 @@
                       
               @foreach($results as $result)
                 <tr>
-                  <td><a href="/task/{{ $result->task }}">{{ $result->task }}</a></td>
+                  <td><a href="/lang/{{ $result->lang }}">{{ $result->lang }}</a></td>
                   <td>{{ $result->word_count }}</td>
                   <td>{{ $result->openness }}</td>
                   <td>{{ $result->adventurousness }}</td>

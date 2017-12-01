@@ -13,7 +13,11 @@
                           <option value="{{$lang->id}}">{{$lang->name}}</option>
                         @endforeach
                     </select>
-                    <input class="form-control" type="text" name="task" placeholder="task title">
+                    <select class="form-control" name="task">
+                        @foreach($tasks as $task)
+                          <option value="{{$task->id}}">{{$task->name}}</option>
+                        @endforeach
+                    </select>
                     <textarea class="form-control" name="result" placeholder="json response"></textarea>
                     <button class="form-control" type="submit">Add JSON</button>
                 </form>
@@ -27,6 +31,14 @@
                     <button class="form-control" type="submit">Add Language</button>
                 </form>
 
+                <hr>
+
+                ADD A TASK
+                <form class="form" method="post" action="/posttask">
+                     {{ csrf_field() }}
+                    <input class="form-control" type="text" name="name" placeholder="task name">
+                    <button class="form-control" type="submit">Add task type</button>
+                </form>
 
                 </div>
             </div>

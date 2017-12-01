@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Lang;
+use App\Test;
 use App\Result;
 use Auth;
 
@@ -19,8 +20,9 @@ class langController extends Controller
 
 	public function list(){
 
+        $tasks = Test::get();
         $langs = Lang::get();
-        return view('list')->withLangs($langs);
+        return view('list')->withLangs($langs)->withTasks($tasks);
 	}
 
 	public function showLang($id){
@@ -28,6 +30,21 @@ class langController extends Controller
 		$lang = Lang::where('id', $id)->first();
 		$results = Result::where('lang', $id)->get();
         return view('langpage')->withLang($lang)->withResults($results);
+
+	}
+
+
+	public function tasklist(){
+
+        $tasks = Test::get();
+        return view('list')->withTasks($tasks);
+	}
+
+	public function showTask($id){
+
+		$task = Test::where('id', $id)->first();
+		$results = Result::where('task', $id)->get();
+        return view('taskpage')->withTask($task)->withResults($results);
 
 	}
 
@@ -44,7 +61,14 @@ class langController extends Controller
 
 	}
 
-
+	public function posttask(Request $request){
+		if(Auth::user()){
+			$task = new Test();
+			$task->name = $request->name;
+			$task->save();
+		}
+		return back();
+	}
 
 	public function posttexts(Request $request){
 

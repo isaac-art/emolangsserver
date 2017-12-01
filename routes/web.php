@@ -15,9 +15,12 @@ Route::get('/', 'langController@welcome');
 
 Route::post('/posttext', 'langController@posttexts');
 Route::post('/postlang', 'langController@postlang');
+Route::post('/posttask', 'langController@posttask');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/langs', 'langController@list');
 Route::get('/lang/{id}', 'langController@showLang');
+Route::get('/tasks', 'langController@tasklist');
+Route::get('/task/{id}', 'langController@showtask');
