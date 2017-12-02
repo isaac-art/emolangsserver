@@ -66,8 +66,150 @@
                 <th>hedonism</th>
                 <th>self enhancement</th>
                 <th>self transcendence</th>
+                    <th>automobile_ownership_cost </th>
+                  <th>automobile_safety</th>
+                  <th>clothes_quality </th>
+                  <th>clothes_style </th>
+                  <th>clothes_comfort </th>
+                  <th>influence_brand_nae </th>
+                  <th>influence_utility</th>
+                  <th>influence_online_ads</th>
+                  <th>influence_social_media</th>
+                  <th>influence_familymembers </th>
+                  <th>spur_of_moment </th>
+                  <th>credit_card_payment </th>
+                  <th>eat_out</th>
+                  <th>gym_membership </th>
+                  <th>outdoor </th>
+                  <th>concerned_environment</th>
+                  <th>start_business</th>
+                  <th>movie_romance</th>
+                  <th>movie_adventure </th>
+                  <th>movie_horror </th>
+                  <th>movie_musical</th>
+                  <th>movie_historical</th>
+                  <th>movie_science_fiction </th>
+                  <th>movie_war </th>
+                  <th>movie_drama</th>
+                  <th>movie_action</th>
+                  <th>movie_documentary</th>
+                  <th>music_rap </th>
+                  <th>music_country</th>
+                  <th>music_r_b </th>
+                  <th>music_hip_hop</th>
+                  <th>music_live_event </th>
+                  <th>music_playing</th>
+                  <th>music_latin </th>
+                  <th>music_rock </th>
+                  <th>music_classical </th>
+                  <th>read_frequency </th>
+                  <th>books_entertainment_magazines </th>
+                  <th>books_non_fiction </th>
+                  <th>books_financial_investing</th>
+                  <th>books_autobiographies</th>
+                  <th>volunteer </th>
+
             </thead>
-                      
+              <tr class="success">
+                <td>AVERAGE</td>
+                  <td>{{ $average["word_count"] }}</td>
+                  <td>{{ $average["openness"] }}</td>
+                  <td>{{ $average["adventurouseness"] }}</td>
+                  <td>{{ $average["artistic_interests"] }}</td>
+                  <td>{{ $average["emotionality"] }}</td>
+                  <td>{{ $average["imagination"] }}</td>
+                  <td>{{ $average["intellect"] }}</td>
+                  <td>{{ $average["authority_challenging"] }}</td>
+                  <td>{{ $average["conscientiousness"] }}</td>
+                  <td>{{ $average["achivement_striving"] }}</td>
+                  <td>{{ $average["cautiousness"] }}</td>
+                  <td>{{ $average["dutifulness"] }}</td>
+                  <td>{{ $average["orderliness"] }}</td>
+                  <td>{{ $average["self_discipline"] }}</td>
+                  <td>{{ $average["self_efficacy"] }}</td>
+                  <td>{{ $average["extraversion"] }}</td>
+                  <td>{{ $average["activity_level"] }}</td>
+                  <td>{{ $average["assertiveness"] }}</td>
+                  <td>{{ $average["cheerfulness"] }}</td>
+                  <td>{{ $average["excitement_seeking"] }}</td>
+                  <td>{{ $average["outgoing"] }}</td>
+                  <td>{{ $average["gregariousness"] }}</td>
+                  <td>{{ $average["agreeableness"] }}</td>
+                  <td>{{ $average["altruism"] }}</td>
+                  <td>{{ $average["cooperation"] }}</td>
+                  <td>{{ $average["modesty"] }}</td>
+                  <td>{{ $average["uncompromising"] }}</td>
+                  <td>{{ $average["sympathy"] }}</td>
+                  <td>{{ $average["trust"] }}</td>
+                  <td>{{ $average["emotional_range"] }}</td>
+                  <td>{{ $average["fiery"] }}</td>
+                  <td>{{ $average["prone_to_worry"] }}</td>
+                  <td>{{ $average["melancholy"] }}</td>
+                  <td>{{ $average["immoderation"] }}</td>
+                  <td>{{ $average["self_consciousness"] }}</td>
+                  <td>{{ $average["susceptilble_to_stess"] }}</td>
+                  <td>{{ $average["challenge"] }}</td>
+                  <td>{{ $average["closeness"] }}</td>
+                  <td>{{ $average["curiosity"] }}</td>
+                  <td>{{ $average["excitement"] }}</td>
+                  <td>{{ $average["harmony"] }}</td>
+                  <td>{{ $average["ideal"] }}</td>
+                  <td>{{ $average["liberty"] }}</td>
+                  <td>{{ $average["love"] }}</td>
+                  <td>{{ $average["practicality"] }}</td>
+                  <td>{{ $average["self_expression"] }}</td>
+                  <td>{{ $average["stability"] }}</td>
+                  <td>{{ $average["structure"] }}</td>
+                  <td>{{ $average["conservation"] }}</td>
+                  <td>{{ $average["openness_to_change"] }}</td>
+                  <td>{{ $average["hedonism"] }}</td>
+                  <td>{{ $average["self_enhancement"] }}</td>
+                  <td>{{ $average["self_transcendence"] }}</td>
+                  <td>{{$average["consumption_preferences_automobile_ownership_cost"] }}</td>
+                  <td>{{$average["consumption_preferences_automobile_safety"]}} </td>
+                  <td>{{$average["consumption_preferences_clothes_quality"] }}</td>
+                  <td>{{$average["consumption_preferences_clothes_style"] }}</td>
+                  <td>{{$average["consumption_preferences_clothes_comfort"] }}</td>
+                  <td>{{$average["consumption_preferences_influence_brand_name"] }}</td>
+                  <td>{{$average["consumption_preferences_influence_utility"]}}</td>
+                  <td>{{$average["consumption_preferences_influence_online_ads"]}}</td>
+                  <td>{{$average["consumption_preferences_influence_social_media"]}}</td>
+                  <td>{{$average["consumption_preferences_influence_family_members"] }}</td>
+                  <td>{{$average["consumption_preferences_spur_of_moment"] }}</td>
+                  <td>{{$average["consumption_preferences_credit_card_payment"] }}</td>
+                  <td>{{$average["consumption_preferences_eat_out"]}}</td>
+                  <td>{{$average["consumption_preferences_gym_membership"] }}</td>
+                  <td>{{$average["consumption_preferences_outdoor"] }}</td>
+                  <td>{{$average["consumption_preferences_concerned_environment"]}}</td>
+                  <td>{{$average["consumption_preferences_start_business"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_romance"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_adventure"] }}</td>
+                  <td>{{$average["consumption_preferences_movie_horror"] }}</td>
+                  <td>{{$average["consumption_preferences_movie_musical"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_historical"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_science_fiction"] }}</td>
+                  <td>{{$average["consumption_preferences_movie_war"] }}</td>
+                  <td>{{$average["consumption_preferences_movie_drama"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_action"]}}</td>
+                  <td>{{$average["consumption_preferences_movie_documentary"]}}</td>
+                  <td>{{$average["consumption_preferences_music_rap"] }}</td>
+                  <td>{{$average["consumption_preferences_music_country"]}}</td>
+                  <td>{{$average["consumption_preferences_music_r_b"] }}</td>
+                  <td>{{$average["consumption_preferences_music_hip_hop"]}}</td>
+                  <td>{{$average["consumption_preferences_music_live_event"] }}</td>
+                  <td>{{$average["consumption_preferences_music_playing"]}}</td>
+                  <td>{{$average["consumption_preferences_music_latin"] }}</td>
+                  <td>{{$average["consumption_preferences_music_rock"] }}</td>
+                  <td>{{$average["consumption_preferences_music_classical"] }}</td>
+                  <td>{{$average["consumption_preferences_read_frequency"] }}</td>
+                  <td>{{$average["consumption_preferences_books_entertainment_magazines"] }}</td>
+                  <td>{{$average["consumption_preferences_books_non_fiction"] }}</td>
+                  <td>{{$average["consumption_preferences_books_financial_investing"]}}</td>
+                  <td>{{$average["consumption_preferences_books_autobiographies"]}}</td>
+                  <td>{{$average["consumption_preferences_volunteer"] }}</td>
+                 
+ 
+              </tr>    
               @foreach($results as $result)
                 <tr>
                   <td>
@@ -132,7 +274,48 @@
                   <td>{{ $result->hedonism }}</td>
                   <td>{{ $result->self_enhancement }}</td>
                   <td>{{ $result->self_transcendence }}</td>
-
+                  <td>{{$result->consumption_preferences_automobile_ownership_cost }}</td>
+                  <td>{{$result->consumption_preferences_automobile_safety}} </td>
+                  <td>{{$result->consumption_preferences_clothes_quality }}</td>
+                  <td>{{$result->consumption_preferences_clothes_style }}</td>
+                  <td>{{$result->consumption_preferences_clothes_comfort }}</td>
+                  <td>{{$result->consumption_preferences_influence_brand_nae }}</td>
+                  <td>{{$result->consumption_preferences_influence_utility}}</td>
+                  <td>{{$result->consumption_preferences_influence_online_ads}}</td>
+                  <td>{{$result->consumption_preferences_influence_social_media}}</td>
+                  <td>{{$result->consumption_preferences_influence_familymembers }}</td>
+                  <td>{{$result->consumption_preferences_spur_of_moment }}</td>
+                  <td>{{$result->consumption_preferences_credit_card_payment }}</td>
+                  <td>{{$result->consumption_preferences_eat_out}}</td>
+                  <td>{{$result->consumption_preferences_gym_membership }}</td>
+                  <td>{{$result->consumption_preferences_outdoor }}</td>
+                  <td>{{$result->consumption_preferences_concerned_environment}}</td>
+                  <td>{{$result->consumption_preferences_start_business}}</td>
+                  <td>{{$result->consumption_preferences_movie_romance}}</td>
+                  <td>{{$result->consumption_preferences_movie_adventure }}</td>
+                  <td>{{$result->consumption_preferences_movie_horror }}</td>
+                  <td>{{$result->consumption_preferences_movie_musical}}</td>
+                  <td>{{$result->consumption_preferences_movie_historical}}</td>
+                  <td>{{$result->consumption_preferences_movie_science_fiction }}</td>
+                  <td>{{$result->consumption_preferences_movie_war }}</td>
+                  <td>{{$result->consumption_preferences_movie_drama}}</td>
+                  <td>{{$result->consumption_preferences_movie_action}}</td>
+                  <td>{{$result->consumption_preferences_movie_documentary}}</td>
+                  <td>{{$result->consumption_preferences_music_rap }}</td>
+                  <td>{{$result->consumption_preferences_music_country}}</td>
+                  <td>{{$result->consumption_preferences_music_r_b }}</td>
+                  <td>{{$result->consumption_preferences_music_hip_hop}}</td>
+                  <td>{{$result->consumption_preferences_music_live_event }}</td>
+                  <td>{{$result->consumption_preferences_music_playing}}</td>
+                  <td>{{$result->consumption_preferences_music_latin }}</td>
+                  <td>{{$result->consumption_preferences_music_rock }}</td>
+                  <td>{{$result->consumption_preferences_music_classical }}</td>
+                  <td>{{$result->consumption_preferences_read_frequency }}</td>
+                  <td>{{$result->consumption_preferences_books_entertainment_magazines }}</td>
+                  <td>{{$result->consumption_preferences_books_non_fiction }}</td>
+                  <td>{{$result->consumption_preferences_books_financial_investing}}</td>
+                  <td>{{$result->consumption_preferences_books_autobiographies}}</td>
+                  <td>{{$result->consumption_preferences_volunteer }}</td>
 
 
                 </tr>
