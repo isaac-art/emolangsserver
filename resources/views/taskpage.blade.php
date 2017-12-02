@@ -12,7 +12,7 @@
             <div class="panel" style="overflow: scroll;">
             <table class="table table-striped" >
             <thead>
-                <th>Language ID</th>
+                <th>Language </th>
                 <th>word_count</th>
                 <th>openness</th>
                 <th>adventurousness</th>
@@ -70,7 +70,15 @@
                       
               @foreach($results as $result)
                 <tr>
-                  <td><a href="/lang/{{ $result->lang }}">{{ $result->lang }}</a></td>
+                  <td>
+                    <a href="/lang/{{ $result->lang }}">
+                    @foreach($langs as $lang)
+                        @if($lang->id == $result->lang)
+                          {{ $lang->name }}
+                        @endif
+                    @endforeach
+                    </a>
+                  </td>
                   <td>{{ $result->word_count }}</td>
                   <td>{{ $result->openness }}</td>
                   <td>{{ $result->adventurousness }}</td>

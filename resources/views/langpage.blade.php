@@ -12,7 +12,7 @@
             <div class="panel" style="overflow: scroll;">
             <table class="table table-striped" >
             <thead>
-                <th>Task ID</th>
+                <th>Task </th>
                 <th>word_count</th>
                 <th>openness</th>
                 <th>adventurousness</th>
@@ -70,7 +70,15 @@
                       
               @foreach($results as $result)
                 <tr>
-                  <td><a href="/task/{{ $result->task }}">{{ $result->task }}</a></td>
+                  <td>
+                    <a href="/task/{{ $result->task }}">
+                       @foreach($tasks as $task)
+                          @if($task->id == $result->task)
+                            {{ $task->name }}
+                          @endif
+                      @endforeach
+                    </a>
+                  </td>
                   <td>{{ $result->word_count }}</td>
                   <td>{{ $result->openness }}</td>
                   <td>{{ $result->adventurousness }}</td>

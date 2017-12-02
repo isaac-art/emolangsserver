@@ -26,10 +26,10 @@ class langController extends Controller
 	}
 
 	public function showLang($id){
-
+		$tasks = Test::get();
 		$lang = Lang::where('id', $id)->first();
 		$results = Result::where('lang', $id)->get();
-        return view('langpage')->withLang($lang)->withResults($results);
+        return view('langpage')->withLang($lang)->withResults($results)->withTasks($tasks);
 
 	}
 
@@ -41,10 +41,10 @@ class langController extends Controller
 	}
 
 	public function showTask($id){
-
+		$langs = Lang::get();
 		$task = Test::where('id', $id)->first();
 		$results = Result::where('task', $id)->get();
-        return view('taskpage')->withTask($task)->withResults($results);
+        return view('taskpage')->withTask($task)->withResults($results)->withLangs($langs);
 
 	}
 
