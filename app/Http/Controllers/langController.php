@@ -25,6 +25,16 @@ class langController extends Controller
         return view('list')->withLangs($langs)->withTasks($tasks);
 	}
 
+	public function answerQuery($query){
+
+		$result = Result::orderBy($query, 'desc')->first();
+
+		$lang = Lang::where('id', $result->lang)->first();
+
+		return $lang;
+
+	}
+
 	public function showLang($id){
 		$tasks = Test::get();
 		$lang = Lang::where('id', $id)->first();

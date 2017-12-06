@@ -24,3 +24,6 @@ Route::get('/langs', 'langController@list');
 Route::get('/lang/{id}', 'langController@showLang');
 Route::get('/tasks', 'langController@tasklist');
 Route::get('/task/{id}', 'langController@showtask');
+
+
+Route::post('/search/{query}', 'langController@answerQuery');
