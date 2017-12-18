@@ -1,51 +1,29 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+https://emolangs.ishimura.uk/
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
 
-## About Laravel
+“ It is important to keep in mind that computer code, and computer programs, are not machine creations and machines talking to themselves, but writings by humans. “ – Florian Cramer
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
+As artist-programmers we were motivated to explore how different programming languages and creative coding frameworks offer different constraints to us, and how these constraints affect our ways of seeing and what we come to communicate through our artwork. We wanted to raise awareness of the influence of language on a programmer and explore alternative structures we can work with as a way of understanding the benefits of the constraints and to also offer routes of escape.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Our research looked at the idea of Linguistic Relativity in programming languages, as well as emotional expression in programming. We explored these ideas through writings on Critical Code Studies and Computer Mediated Communication. We then moved on to examine the programming language experiments known as Esoteric Programming Languages. These studies make the familiar unfamiliar, they test the boundaries of language, explore a detail of a process, and question if programming languages are written for machines or other people.
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
+Our first experiments for an artefact were in code poetry. Our language of choice was C++, and using its key words we independently tried to write a biography about “Harold Warris Thompson”, a randomly chosen article from Wikipedia. These code poems did not seem to answer our questions and seemed to raise more questions about how far a language we go. Do we have to write poems that can compile as machine code in order to be within the constraints of the language? If not are we just playing with aesthetic properties of code? We tried a few other writing tasks but decided to examine language design in further detail.
 
-## Learning Laravel
+Investigating deeper we began to reflect on the influence of particular cultures on programming language design, we explored the git history of P5.js to see how many people were contributing and where they were from. We began to see programming languages and creative coding frameworks as cross-cultural creations. Following on from Alan Blackwells essay 'Metaphors we program by: space, action and society in java' which explores the languages used in the documentation of the language rather than the language itself, we began examining the Processing reference pages, running the descriptions of functions through sentiment analysis revealing it as 'sad, analytical, and tentative'.
 
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
+ Esoteric programming languages are often made by smaller groups, often one person, exploring an idea of language in detail. What if we programmed with colours?(Piet) What if it looked like a recipe? (Chef) Or a play?(Shakespeare). These esoteric languages seemed to offer exciting artistic experiments, and although they were not intended to be used in production they are still ‘useful’ in illuminating the influence of language design choices in more popular languages. These esoteric languages led us to other programming environments, instruments, and tools, such as Quipu. Quipu are a 17th Century Andean database structure. Using knots and beads people could record numerical information which could be passed around and read, this data could encode stories or other detailed records of events as an alternative to our written text. 
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
+Our artefact used two resources, IBM Watson Personality Insights API and Rossetta Code. The Rosetta code is a programming chrestomathy website that present solutions to the same task in as many different languages as possible, to demonstrate how languages are similar and different.
+IBM Watson Personality Insights API derives insights about personality characteristics from social media, enterprise data, or other digital communications. Watson returns JSON showing how the inputted information scores on the big 5 personality indicators, as well as predictions on consumer preferences. This allows companies to take writing text from users and work out what to sell to them, or how to sell it. 
 
-## Laravel Sponsors
+We used these two resources to create a dataset on the personality insights into programming languages. This dataset then allowed us to create a website that can return the language with the highest score on a series of prompts. You can ask the website to show you a language that is calm and it will check the database for the calmest language according to the Watson api results. The list gets more ridiculous as you scroll down and we hope with this we begin to pull away at the ‘command and control’ of programming languages. Making people approach languages in a less serious way, have more fun with them. If we talk about BASIC believing in itself, or that SCHEME likes the outdoors then perhaps they seem more creative and we use them more playfully.
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
+We are missing a scientific study here, but we are not scientists. This can be criticised as the personality insights tool is not intended for this use, the results are not really insightful, yet to us it does not matter too much. Perhaps we could have given random results from the questions and it would have been easier to create, but in following the process that we did we begin to tell a story which is easier to understand and communicate. A shared belief that BASIC is the most excitement seeking language helps us then talk about what that statement means. 
 
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
+With this we can start to think about ways of actually creating a programming languages that challenge authority, or are trusting, or like war films. What would those things look like? What would they feel like? Perhaps it is for artists to explore this area of research further.
 
-## Contributing
+“Indeed computer programs were first conceived in terms of weaving” - Alex McClean Artist-Programmers and Programming Languages For The Arts. 2011.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+Written languages and computing both owe their origins to weaving. The Jacquard Loom with punch cards for patterns led to the computers we use today. The word ‘text’ comes from cloth and storytelling has long been described as spinning threads. Interesting research is being done to explore this idea of programming and weaving in the Penelope Project (http://penelope.hypotheses.org/).
+ 
+Thinking of programming in these terms may allow the artist-programmer a way of using existing creative coding frameworks in a way that softens the edges of the structure. The constraints of language give us something to push up against, and being aware of where the boundaries are can help us express our ideas and choose appropriate structures for the work we make.
